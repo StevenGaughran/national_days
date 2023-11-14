@@ -51,9 +51,9 @@ def master_print():
 
 
 # ~~~~~ Email ~~~~~
-my_email = "arsenic.canary@gmail.com"
-password = "tbwkhywqrenrdqvj"
-jen = "jennifergaughran@gmail.com"
+my_email = "fake.email@gmail.com"
+password = "password"
+jen = "jenemail@gmail.com"
 
 if day_of_week == 2:
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
