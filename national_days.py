@@ -31,16 +31,7 @@ for i in divs:
     holiday_links.append(i.find('a')['href'])
 
 # ~~~~~ Combining the info into a dicitonary ~~~~~
-
 master_list = dict(zip(holidays, holiday_links))
-
-
-# ~~~~~ Fancy Function ~~~~~
-#  This is the OLD function, which worked in terminal but not in reality.
-
-# def master_print():
-#     for i in master_list.items():
-#         print(i)
 
 # This is the NEW function, developed with the help of @aetimmes.
 def master_print():
@@ -48,7 +39,6 @@ def master_print():
     for k in master_list:
         result += f"{k} {master_list[k]}\n"
     return result
-
 
 # ~~~~~ Email ~~~~~
 my_email = "fake.email@gmail.com"
@@ -64,4 +54,3 @@ if day_of_week == 2:
             to_addrs=jen,
             msg=f"Subject:National Days!\n\nHello! Here are the National Days for {format_date}:\n{master_print()}".encode("ascii", "ignore")
         )
-
